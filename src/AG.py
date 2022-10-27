@@ -195,7 +195,6 @@ def algoritmoGenetico(tamanho_populacao):
         # Condicao de parada
         if (resultado[0][0] == -1):
             teste = True
-        
             # Criando gráfico com os valores dos individuos mais aptos das iterações
             grafico.plot(maisAptos)
             grafico.title("AG")
@@ -212,7 +211,9 @@ def algoritmoGenetico(tamanho_populacao):
         populacao = crossover(selecionados)
         epoca+=1
 
+#-------------EXECUTAR---------------
 algoritmoGenetico(15)
+#------------------------------------
 
 #   Algoritmo Genético Passo-a-passo
 #
